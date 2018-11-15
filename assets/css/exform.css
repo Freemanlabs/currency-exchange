@@ -1,0 +1,883 @@
+.main-exchange-form .exchange-form {
+    margin-bottom: 30px
+}
+
+.main-exchange-form .exchange-input {
+    max-width: none
+}
+
+.exchange-input {
+    background: #36324a;
+    position: relative;
+    border-radius: 5px;
+    cursor: pointer;
+    max-width: 400px
+}
+
+.exchange-input__light {
+    background: #fff;
+    border: 1px solid #d7dfe8
+}
+
+.exchange-input--title {
+    color: #5e5a72;
+    position: absolute;
+    top: 5px;
+    left: 20px;
+    font-size: 12px
+}
+
+.exchange-input--input {
+    color: #fff;
+    background: none;
+    border: 0;
+    height: 70px;
+    padding: 17px 20px 0;
+    margin: 0;
+    font-size: 24px;
+    margin-right: 70px;
+    outline: none
+}
+
+.exchange-input--input[disabled] {
+    -webkit-text-fill-color: #fff;
+    -webkit-opacity: 1;
+    color: #fff
+}
+
+.exchange-input__light .exchange-input--input {
+    color: #2c4240
+}
+
+.exchange-input__light .exchange-input--input[disabled] {
+    -webkit-text-fill-color: #2c4240;
+    -webkit-opacity: 1;
+    color: #2c4240
+}
+
+.exchange-input--vertical {
+    width: 1px;
+    height: 70px;
+    background: #fff;
+    opacity: .1;
+    position: absolute;
+    right: 150px;
+    top: 0
+}
+
+.exchange-input__light .exchange-input--vertical {
+    background: #d7dfe8;
+    opacity: 1
+}
+
+.exchange-input--arrow {
+    width: 12px;
+    position: absolute;
+    right: 14px;
+    top: 25px
+}
+
+.exchange-input--currency {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 22px;
+    color: #fff;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    text-transform: uppercase;
+    height: 70px;
+    width: 150px;
+    padding-left: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start
+}
+
+.exchange-input--currency i {
+    color: #3bee81;
+    font-size: 20px;
+    margin-right: 8px;
+    vertical-align: middle
+}
+
+.exchange-input__light .exchange-input--currency {
+    color: #2c4240
+}
+
+.exchange-input--arrow svg {
+    fill: #fff
+}
+
+.exchange-input__light .exchange-input--arrow svg {
+    fill: #2c4240
+}
+
+.exchange-input--list {
+    display: none;
+    z-index: 2000;
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #2c4240;
+    background: #fff;
+    width: 100%;
+    -webkit-box-shadow: 0 1px 7px 0 rgba(0, 0, 0, .5);
+    box-shadow: 0 1px 7px 0 rgba(0, 0, 0, .5);
+    border-radius: 5px;
+    overflow: auto
+}
+
+.exchange-input--list-content {
+    max-height: 400px;
+    overflow: auto
+}
+
+.exchange-input--list-content::-webkit-scrollbar {
+    width: 5px;
+    height: 8px;
+    background-color: #aaa
+}
+
+.exchange-input--list-content::-webkit-scrollbar-thumb {
+    background: #3bee81
+}
+
+.exchange-input--list input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #b6c0cb;
+    border-radius: 0;
+    font-size: 20px;
+    margin-bottom: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 40px;
+    background-image: url(29833219faaac4a10054f1541c191adc.svg);
+    background-size: 15px 15px;
+    background-position: 13px 17px;
+    background-repeat: no-repeat
+}
+
+.exchange-input--list ul {
+    margin: 0;
+    padding: 0
+}
+
+.exchange-input--list li {
+    padding: 2px 20px;
+    font-size: 18px
+}
+
+.exchange-input--list i {
+    display: inline-block;
+    width: 30px;
+    font-size: 18px
+}
+
+.exchange-input--list span.ticker {
+    display: inline-block;
+    width: 75px;
+    font-weight: 400
+}
+
+.exchange-input--list span.name {
+    font-size: 14px;
+    color: #ccc;
+    font-weight: 300
+}
+
+.exchange-input--list li:focus,
+.exchange-input--list li:hover {
+    background: #3bee81;
+    color: #fff
+}
+
+.exchange-input--list-title {
+    padding: 8px 20px;
+    font-size: 12px;
+    color: #5e5a72
+}
+
+.exchange-input--loader {
+    position: absolute;
+    top: 10px;
+    right: 120px;
+    background: red
+}
+
+.exchange-input--not-found {
+    padding: 15px 10px;
+    font-size: 16px;
+    text-align: center
+}
+
+.exchange-input__currency-only .exchange-input--input {
+    padding-top: 0;
+    height: 50px
+}
+
+.exchange-input__currency-only .exchange-input--vertical {
+    height: 50px
+}
+
+.exchange-input__currency-only .exchange-input--currency {
+    height: 50px;
+    width: 100%
+}
+
+.exchange-input__currency-only .exchange-input--arrow {
+    top: 16px
+}
+.line-exchange-form {
+    width: 100%;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 30px 0
+}
+
+.line-exchange-form,
+.line-exchange-form .exchange-form {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.line-exchange-form button {
+    max-width: 200px;
+    margin-left: 30px
+}
+.exchange-inputs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 30px 0
+}
+
+.exchange-inputs__horizontal {
+    display: block;
+    margin-top: 0;
+    width: 100%
+}
+
+.exchange-inputs__horizontal .exchange-input {
+    max-width: 100%
+}
+
+.exchange-inputs--swap-icon {
+    width: 21px;
+    height: 19px;
+    margin: 0 20px;
+    background: url(a011028825367cf08d246a6017365974.svg) 50%;
+    cursor: pointer
+}
+
+.exchange-inputs--swap-icon:hover {
+    opacity: .5
+}
+.exchange-steps {
+    padding: 50px 0
+}
+
+.exchange-step-info {
+    border: 2px solid #d7dfe8;
+    border-radius: 5px;
+    padding: 17px 27px;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    width: 100%;
+    margin: 18px 0
+}
+
+.exchange-step-info--info>h3 {
+    font-size: 20px;
+    margin-top: 9px;
+    margin-bottom: 5px
+}
+
+.exchange-step-info--left {
+    min-width: 350px
+}
+
+.exchange-step-info--head {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.exchange-step-info--title {
+    font-weight: 700;
+    font-size: 22px;
+    color: #3bee81
+}
+
+.exchange-step-info--index {
+    width: 40px;
+    height: 40px;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    background-color: #3bee81;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    line-height: 40px;
+    margin-right: 17px
+}
+
+.exchange-step-info--icon {
+    margin-top: 20px;
+    margin-left: 57px
+}
+
+.exchange-step-info--info {
+    font-size: 16px;
+    font-weight: 300;
+    width: calc(100% - 380px)
+}
+
+.exchange-step-info--date {
+    font-weight: 700;
+    margin: 10px 0;
+    min-height: 28px
+}
+
+.exchange-step-info--table {
+    width: 100%;
+    table-layout: fixed
+}
+
+.exchange-step-info--row {
+    width: 100%;
+    max-width: 100%;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent
+}
+
+.exchange-step-info--row:last-child {
+    font-weight: 700
+}
+
+.exchange-step-info--cell {
+    word-wrap: break-word;
+    white-space: normal;
+    line-height: 30px;
+    vertical-align: baseline
+}
+
+.exchange-step-info--cell:first-child {
+    width: 240px
+}
+
+.exchange {
+    display: block;
+    width: 80%
+}
+
+.exchange--section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    min-height: 50px;
+    border-left: 1px solid #ccc
+}
+
+.exchange--section:last-child {
+    border: none
+}
+
+.exchange--block {
+    display: none;
+    position: relative;
+    margin: 50px 0 0 48px;
+    padding-bottom: 40px;
+    width: 90%
+}
+
+.exchange--title {
+    font-size: 20px;
+    position: absolute;
+    top: -4px;
+    left: 48px
+}
+
+.exchange--number {
+    width: 24px;
+    height: 24px;
+    color: #fff;
+    border-radius: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    font-size: 14px;
+    background: #d7dfe8;
+    position: absolute;
+    top: 0;
+    left: -12px
+}
+
+.exchange--section__active .exchange--block {
+    display: block
+}
+
+.exchange--section__active .exchange--title {
+    color: #3bee81;
+    font-size: 24px;
+    top: -4px
+}
+
+.exchange--section__active .exchange--number {
+    background: #3bee81;
+    width: 48px;
+    height: 48px;
+    font-size: 20px;
+    left: -24px;
+    top: -12px
+}
+
+.exchange--table {
+    width: 100%;
+    font-size: 24px;
+    margin-bottom: 40px;
+    color: #5c5780
+}
+
+.exchange--table td {
+    padding: 10px 0
+}
+
+.exchange--table td.address {
+    font-size: 14px
+}
+
+.exchange--table td.highlighted {
+    color: #3bee81
+}
+
+.exchange--table td:first-child {
+    padding-right: 40px
+}
+
+.exchange--table .extra {
+    color: #a086fc;
+    font-size: 20px
+}
+
+.exchange--swap-icon {
+    width: 21px;
+    height: 19px;
+    margin: 0 20px;
+    background: url(a011028825367cf08d246a6017365974.svg) 50%;
+    cursor: pointer
+}
+
+.exchange--centerArrow {
+    width: 100%;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 10px 0;
+    max-width: 400px
+}
+
+.exchange--input {
+    width: 100%
+}
+
+.exchange--inputAddressWrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    margin-bottom: 20px
+}
+
+.exchange--inputAddressWrapper input {
+    margin-bottom: 0;
+    margin-right: 20px
+}
+
+.exchange--inputAddressWrapper .field {
+    margin-bottom: 0
+}
+
+.exchange--inputAddressWrapper button {
+    margin-top: 0
+}
+
+.exchange--error-minimal {
+    color: red;
+    margin-bottom: 20px
+}
+
+.exchange--sending {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+}
+
+.exchange--sending .qrcode {
+    margin-right: 22px
+}
+
+.exchange--sending .box {
+    width: 100%;
+    background-color: #f2f2f2;
+    padding: 30px 30px 30px 60px;
+    border-radius: 5px;
+    margin-bottom: 35px
+}
+
+.exchange--sending dl {
+    margin: 0
+}
+
+.exchange--sending .box:first-child {
+    margin-top: 0
+}
+
+.exchange--sending dl dt {
+    line-height: 32px;
+    float: left;
+    font-size: 12px;
+    color: #a086fc
+}
+
+.exchange--sending dl dd {
+    font-size: 20px;
+    margin-left: 127px;
+    line-height: 32px;
+    color: #2b2b37;
+    word-break: break-all
+}
+
+.exchange--status {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 40px auto;
+    width: 765px
+}
+
+.exchange--state {
+    text-align: center;
+    width: 33%;
+    position: relative
+}
+
+.exchange--state .icon {
+    margin: 0 auto;
+    width: 58px;
+    height: 58px;
+    border-radius: 29px;
+    background: #d7dfe8
+}
+
+.exchange--state__active .icon {
+    background: #3bee81
+}
+.exchange--state .label {
+    width: 100%;
+    margin-top: 17px;
+    color: #5c5780
+}
+
+.exchange--state__active .label {
+    color: #3bee81
+}
+
+.exchange--state .connection {
+    position: absolute;
+    width: 175px;
+    height: 2px;
+    background-color: #d7dfe8;
+    left: 164px;
+    top: 27px
+}
+
+.exchange--state__active .connection {
+    background-color: #3bee81
+}
+
+.exchange-failed {
+    text-align: center
+}
+
+.exchange-failed .failed-icon {
+    height: 136px;
+    width: 113px;
+    background: url(2197054dd6845153b6f2bd08e3f45d1e.svg) 50% no-repeat;
+    margin: auto
+}
+
+.exchange-failed .contact--form {
+    max-width: 50vh;
+    margin: auto;
+    margin-top: 40px
+}
+
+.exchange-failed h3 {
+    font-weight: 400;
+    line-height: 1.2
+}
+
+.exchange-failed p {
+    font-size: 20px
+}
+
+.exchange-failed--message {
+    margin: 40px 0
+}
+
+.exchange--btcc {
+    margin-top: 40px;
+    text-align: center
+}
+
+.exchange--btcc .button {
+    border-radius: 10px
+}
+.exchange-inputs__oneline {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center
+}
+
+.exchange-inputs__oneline button {
+    margin-left: 35px
+}
+
+.exchange-sequence-wrapper {
+    min-height: 86px
+}
+
+.exchange-sequence {
+    list-style: none;
+    position: relative;
+    padding-left: 24px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 35px;
+    border-color: #5c5780;
+    -webkit-transition: height .5s;
+    transition: height .5s
+}
+
+.exchange-sequence--item {
+    position: relative;
+    display: block;
+    line-height: 43px;
+    border-color: #5c5780;
+    color: #5c5780;
+    opacity: 0;
+    -webkit-animation: fadeIn .5s ease 0s 1 forwards;
+    animation: fadeIn .5s ease 0s 1 forwards
+}
+
+.exchange-sequence--item span {
+    white-space: nowrap
+}
+
+.exchange-sequence--item-circle {
+    position: absolute;
+    left: -29px;
+    top: 15px;
+    z-index: 1;
+    display: block;
+    width: 12px;
+    height: 12px;
+    padding: 1px
+}
+
+.exchange-sequence--item-circle:before {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    z-index: 1;
+    background-color: #5c5780;
+    border-radius: 50%
+}
+
+.exchange-sequence--item:after {
+    position: absolute;
+    left: -24px;
+    top: 0;
+    width: 2px;
+    height: 100%;
+    content: "";
+    background-color: #36324a;
+    background-position: 0 0;
+    background-size: 200% 200%;
+    border-color: inherit;
+    border-style: solid;
+    border-width: 1px;
+    border-width: 0;
+    outline: 0
+}
+
+.exchange-sequence--item.active {
+    color: #3bee81;
+    cursor: pointer
+}
+
+.exchange-sequence--item__with-icon:before {
+    display: none
+}
+
+.exchange-sequence--item.active:before {
+    border-color: #3bee81
+}
+
+.exchange-sequence--icon {
+    position: absolute;
+    left: -33px;
+    top: -1px;
+    z-index: 1;
+    display: block;
+    width: 8px;
+    height: 8px;
+    padding: 1px
+}
+.exchange__fullwidth {
+    width: 100%
+}
+
+.exchange--step {
+    padding: 20px
+}
+
+.exchange--step__two {
+    max-width: 700px;
+    padding-bottom: 0
+}
+
+.exchange--inputAddressWrapper {
+    margin-top: 55px;
+    display: block
+}
+
+.exchange--inputExtraIdWrapper {
+    width: calc(100% - 161px);
+    margin-top: 25px
+}
+
+.exchange--inputEmailWrapper {
+    width: calc(100% - 161px)
+}
+
+.exchange--inputEmailWrapper input {
+    margin-top: 30px;
+    margin-bottom: 0
+}
+
+.exchange--inputEmailWrapper .sequence--item-content {
+    color: #56566e
+}
+
+.exchange--inputEmailWrapper .sequence--item__visible {
+    padding-bottom: 0
+}
+
+.exchange--sending .qrcode {
+    width: 148px;
+    height: 148px
+}
+
+.exchange--sending canvas {
+    -webkit-transform: scale(.5);
+    transform: scale(.5);
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0
+}
+
+.exchange-warnings {
+    margin: 10px 0
+}
+
+.exchange-warning {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    padding-left: 6px
+}
+
+.exchange-warning--icon {
+    width: 33px;
+    height: 40px;
+    max-width: 33px
+}
+
+.exchange-warning--icon img {
+    height: 100%
+}
+.exchange-step-info--info .tokens-form-container {
+    margin: 0
+}
+
+.exchange-step-info--info .tokens-form--icon {
+    margin: 0;
+    display: none
+}
+
+.exchange-step-info--info .tokens-form--form {
+    padding-left: 0;
+    background: none
+}
+
+.exchange-step-info--info .tokens-form {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start
+}
+
+.exchange-step-info--info .tokens-form h3 {
+    display: none
+}
